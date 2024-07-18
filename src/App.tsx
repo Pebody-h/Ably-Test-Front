@@ -19,7 +19,7 @@ function App() {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://ably-test-back-docker.onrender.com/insert-number', {
+      const response = await axios.post('http://34.133.167.32:3000/insert-number', {
         value: inputNumber,
       });
       console.log(response.data);
